@@ -49,28 +49,28 @@ This repository contains **IntraVue v1**, the **foundational version** of the sy
 - Loading spinner for evaluations
 
 ## 📁 Project Structure
+```text
 IntraVue-v1/
 │
 ├── backend/
-│ ├── app.py # FastAPI entry point
-│ ├── config.py # Model & prompt configuration
-│ ├── prompts/ # Prompt templates
-│ │ ├── system_prompt.txt
-│ │ ├── user_prompt.txt
-│ │ └── output_format.txt
-│ └── services/
-│ ├── evaluator.py # Orchestrates evaluation
-│ ├── prompt_builder.py # Builds structured prompts
-│ └── llm_client.py # Groq LLM client
+│   ├── app.py                 # FastAPI entry point
+│   ├── config.py              # Model & prompt configuration
+│   ├── prompts/               # Prompt templates
+│   │   ├── system_prompt.txt
+│   │   ├── user_prompt.txt
+│   │   └── output_format.txt
+│   └── services/
+│       ├── evaluator.py       # Orchestrates evaluation
+│       ├── prompt_builder.py  # Builds structured prompts
+│       └── llm_client.py      # Groq LLM client
 │
 ├── frontend/
-│ ├── index.html # UI structure
-│ ├── styles.css # Styling & animations
-│ └── script.js # Client-side logic
+│   ├── index.html             # UI structure
+│   ├── styles.css             # Styling & animations
+│   └── script.js              # Client-side logic
 │
 ├── .gitignore
 └── README.md
----
 
 ## 🧩 Project Architecture
 ## ⚙️ How IntraVue Works (v1 Flow)
