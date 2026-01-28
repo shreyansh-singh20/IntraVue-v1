@@ -71,6 +71,7 @@ IntraVue-v1/
 │
 ├── .gitignore
 └── README.md
+```
 
 ## 🧩 Project Architecture
 ## ⚙️ How IntraVue Works (v1 Flow)
