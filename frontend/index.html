@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>IntraVue – Interview Intelligence</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+
+    <div class="hero">
+        <h1>IntraVue</h1>
+        <p class="subtitle">
+            AI-powered interview evaluation with structured, unbiased feedback
+        </p>
+    </div>
+
+    <form id="evaluateForm">
+
+        <div class="form-section">
+
+            <label for="jobRole">Job Role</label>
+            <input
+                type="text"
+                id="jobRole"
+                placeholder="e.g. Frontend Engineer"
+                required
+            >
+
+            <label for="experience">Experience Level</label>
+            <select id="experience" required>
+                <option value="">Select experience</option>
+                <option value="fresher">Fresher</option>
+                <option value="junior">Junior</option>
+                <option value="mid">Mid-level</option>
+            </select>
+
+            <label for="jobDesc">Job Description</label>
+            <textarea
+                id="jobDesc"
+                rows="4"
+                placeholder="Paste job description here..."
+                required
+            ></textarea>
+
+            <label for="question">Interview Question</label>
+            <textarea
+                id="question"
+                rows="3"
+                placeholder="Enter interview question..."
+                required
+            ></textarea>
+            <small class="hint">Use the exact question asked in interviews</small>
+
+            <label for="answer">Candidate Answer</label>
+            <textarea
+                id="answer"
+                rows="4"
+                placeholder="Enter candidate answer..."
+                required
+            ></textarea>
+            <small class="hint">Paste the answer as you would speak it</small>
+
+        </div>
+
+        <button
+            id="evaluateBtn"
+            type="submit"
+            class="eval-btn"
+            aria-live="polite"
+        >
+            <span id="btn-text">Evaluate Answer</span>
+            <span
+                id="btn-spinner"
+                class="spinner hidden"
+                aria-hidden="true"
+            ></span>
+        </button>
+
+    </form>
+
+    <div id="output" class="output hidden">
+
+        <h2>Interview Evaluation</h2>
+
+        <div class="card expected">
+            <h3>📌 Expected Knowledge</h3>
+            <p id="expected"></p>
+        </div>
+
+        <div class="card demonstrated">
+            <h3>🧠 Demonstrated Understanding</h3>
+            <p id="demonstrated"></p>
+        </div>
+
+        <div class="card gaps">
+            <h3>⚠️ Identified Gaps</h3>
+            <p id="gaps"></p>
+        </div>
+
+        <div class="card risk">
+            <h3>📊 Interview Risk Assessment</h3>
+            <p id="risk"></p>
+        </div>
+
+        <div class="confidence-container">
+            <div class="confidence-header">
+                <span>Confidence Score</span>
+                <span id="confidence-value">0 / 100</span>
+            </div>
+
+            <div class="confidence-bar">
+                <div id="confidence-fill"></div>
+            </div>
+        </div>
+
+        <div class="card improve">
+            <h3>🚀 Improvement Suggestions</h3>
+            <p id="improvements"></p>
+        </div>
+
+        <div class="card summary">
+            <h3>✅ Evaluation Summary</h3>
+            <p id="summary"></p>
+        </div>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

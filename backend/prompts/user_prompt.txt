@@ -1,0 +1,14 @@
+Job Role: {job_role}
+Experience Level: {candidate_experience_level}
+
+Job Description:
+{job_description}
+
+Interview Question:
+{interview_question}
+
+Candidate Answer:
+{candidate_answer}
+
+Evaluate the answer as it would be given in a real interview.
+Focus on clarity, correctness, and key technical signals.

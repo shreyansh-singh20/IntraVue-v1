@@ -1,0 +1,21 @@
+Expected Knowledge:
+- ...
+
+Demonstrated Understanding:
+- ...
+
+Identified Gaps:
+- ...
+
+Interview Risk Assessment:
+- <Risk Level>
+- <2–3 line explanation>
+
+Confidence Score:
+<number between 0 and 100>
+
+Improvement Suggestions:
+- ...
+
+Evaluation Summary:
+...
